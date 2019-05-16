@@ -99,6 +99,7 @@ public class GuiCorrectorProyectos extends Application {
 		itemGuardar = new MenuItem("_Guardar");
 		itemGuardar.setAccelerator(KeyCombination.keyCombination("CTRL+G"));
 		itemGuardar.setDisable(true);
+		itemGuardar.setOnAction(event -> salvarEnFichero());
 
 		itemSalir = new MenuItem("_Salir");
 		itemSalir.setAccelerator(KeyCombination.keyCombination("CTRL+S"));
